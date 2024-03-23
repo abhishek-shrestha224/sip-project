@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+.Navbar {
+  z-index: 99999;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  bottom: 20px;
+  height: 50px;
+  padding: 2px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  background: $BgColor;
+  color: darken($AccentColor, 2%);
+
+  .NavLink {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(10);
+    font-size: rem(26);
+    font-family: $HeadingFont;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:active {
+      background-color: lighten($TextColor, 50%);
+    }
+  }
+  .Artists,
+  .About {
+    font-size: rem(24);
+  }
+}

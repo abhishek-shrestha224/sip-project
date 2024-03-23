@@ -1,0 +1,38 @@
+@use "../../abstracts/" as *;
+.TrendingPage {
+  margin-top: 50px;
+  padding: 0 7px;
+  ._Banner {
+    margin: 0 0 12px;
+    height: 60px;
+    @include flex(row, flex-start, flex-end);
+    .Shape {
+      height: rem(26);
+      width: 16px;
+      background: $AccentColor;
+    }
+    h2 {
+      color: darken($PrimaryColor, 10%);
+      height: rem(26);
+      font-size: rem(26);
+    }
+  }
+
+  .ImageGallery {
+    @include flex(row, space-between, flex-start, 3px);
+    flex-wrap: wrap;
+    .ImgWrapper {
+      flex: 1;
+      max-width: 50%;
+      min-width: 40%;
+      height: rem(300);
+      @include flex(center, center);
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        object-fit: cover;
+      }
+    }
+  }
+}

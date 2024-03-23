@@ -1,0 +1,4 @@
+@mixin grid-child($col-span, $row-span) {
+  grid-row: span $row-span;
+  grid-column: span $col-span;
+}

@@ -1,0 +1,45 @@
+@use "../../abstracts" as *;
+.Gallery {
+  padding: 0 5px;
+  .Header {
+    @include flex(row, flex-start, flex-end);
+    margin-bottom: 7px;
+    height: fit-content;
+    .Shape {
+      height: rem(26);
+      width: 16px;
+      background: $AccentColor;
+    }
+    h2 {
+      color: darken($PrimaryColor, 10%);
+      height: rem(26);
+      font-size: rem(26);
+    }
+  }
+  .Wrapper {
+    @include grid(3, 4, 3px);
+    .ImgWrapper {
+      .Img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        object-fit: cover;
+      }
+    }
+    .Grid1 {
+      @include grid-child(2, 2);
+    }
+    .Grid2 {
+      @include grid-child(2, 2);
+    }
+    .Grid3 {
+      @include grid-child(1, 1);
+    }
+    .Grid4 {
+      @include grid-child(1, 1);
+    }
+    .Grid5 {
+      @include grid-child(2, 1);
+    }
+  }
+}

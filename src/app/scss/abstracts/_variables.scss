@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Gilroy";
+  src: url("/font/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: "Klarheit Kurrent";
+  src: url("/font/Klarheit-Kurrent.otf");
+}
+// ! Fonts
+
+$PrimaryFont: "Gilroy";
+$AccentFont: "Klarheit Kurrent";
+$HeadingFont: "Raleway";
+
+// ! Colors
+$PrimaryColor: #551a8b;
+$AccentColor: #e5426a;
+$TextColor: #4c4452;
+$BgColor: #f6f6f6;

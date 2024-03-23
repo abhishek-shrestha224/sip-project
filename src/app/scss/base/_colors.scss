@@ -1,0 +1,19 @@
+@use "../abstracts" as abs;
+
+body {
+  background-color: abs.$BgColor;
+  color: abs.$TextColor;
+}
+
+input,
+textarea {
+  background: transparent;
+}
+
+button {
+  background: abs.$PrimaryColor;
+  color: abs.$TextColor;
+}
+a {
+  color: inherit;
+}
