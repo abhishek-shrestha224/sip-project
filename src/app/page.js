@@ -7,7 +7,7 @@ import Welcome from "./(views)/components/Welcome";
 
 const Home = () => {
   return (
-    <section>
+    <section className="App">
       <Banner />
       <Welcome />
       <Gallery />

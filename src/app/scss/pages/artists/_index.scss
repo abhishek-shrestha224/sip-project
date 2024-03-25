@@ -1,1 +1,51 @@
-@forward "header";
+@use "../../abstracts/" as *;
+
+.ArtistsPage {
+  margin: 50px 0 80px;
+  padding: 0 7px;
+  ._Banner {
+    margin: 0 0 12px;
+    height: 60px;
+    @include flex(row, flex-start, flex-end);
+    .Shape {
+      height: rem(26);
+      width: 16px;
+      background: $AccentColor;
+    }
+    h2 {
+      color: darken($PrimaryColor, 10%);
+      height: rem(26);
+      font-size: rem(26);
+    }
+  }
+
+  .ArtistsWrapper {
+    @include flex(column, flex-start, stretch, rem(7));
+    .Artist {
+      height: rem(70);
+      padding: 0 rem(12);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      border-radius: rem(5);
+      @include flex(row, flex-start, center, rem(7));
+      .AvatarWrapper {
+        height: rem(40);
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        color: $AccentColor;
+        font-size: rem(38);
+        @include flex(row, center, center);
+      }
+      .TextWrapper {
+        h2 {
+          font-size: rem(18);
+          letter-spacing: rem(1);
+        }
+        p {
+          font-size: rem(14);
+
+          letter-spacing: rem(-0.5);
+        }
+      }
+    }
+  }
+}
