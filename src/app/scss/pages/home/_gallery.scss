@@ -4,7 +4,7 @@
   .Header {
     @include flex(row, flex-start, flex-end);
     margin-bottom: 7px;
-    height: fit-content;
+    height: 60px;
     .Shape {
       height: rem(26);
       width: 16px;
