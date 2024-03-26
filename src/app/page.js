@@ -1,4 +1,4 @@
-import Abstracts from "./(views)/components/Abstracts";
+import React from "react";
 import Banner from "./(views)/components/Banner";
 import Gallery from "./(views)/components/Gallery";
 import Landscapes from "./(views)/components/Landscapes";
@@ -13,7 +13,6 @@ const Home = () => {
       <Gallery />
       <Portraits />
       <Landscapes />
-      <Abstracts />
     </section>
   );
 };
