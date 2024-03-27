@@ -49,7 +49,7 @@ export default async function Artist({ params }) {
       <div className="ImageGallery">
         {images.map((image, index) => (
           <figure className="ImgWrapper" key={index}>
-            <img src={image.url} />
+            <img src={image.url} alt="Images" />
           </figure>
         ))}
       </div>

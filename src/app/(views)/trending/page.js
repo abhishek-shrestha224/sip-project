@@ -37,7 +37,7 @@ const Trending = async () => {
       <section className="ImageGallery">
         {images.map((image, index) => (
           <figure className="ImgWrapper" key={index}>
-            <img src={image.url} />
+            <img src={image.url} alt="Images" />
           </figure>
         ))}
       </section>

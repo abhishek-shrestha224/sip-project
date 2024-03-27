@@ -59,7 +59,7 @@ function About() {
       </div>
       <p>
         Join us on our journey to make art accessible to everyone! Whether
-        you're an artist, a supporter, or someone passionate about social
+        you&apos;re an artist, a supporter, or someone passionate about social
         innovation, there are many ways to get involved and make a difference.
         Together, we can create a more inclusive and inspiring world through
         art.
