@@ -19,6 +19,9 @@ function About() {
         <div className="Shape"></div>
         <h2>Who Are We?</h2>
       </div>
+      <figure>
+        <img src="/img/team.jpg" alt="Image of team memebers" />
+      </figure>
       <p>
         We are Underwaters BCS 4th Sem. We are committed to creating an
         inclusive space where people of all abilities can explore, engage with,

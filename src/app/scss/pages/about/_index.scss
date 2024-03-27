@@ -18,7 +18,15 @@
       font-size: rem(26);
     }
   }
-
+  figure {
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: rem(5);
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    }
+  }
   .Vision {
     display: flex;
     flex-direction: column;
