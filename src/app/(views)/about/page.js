@@ -52,6 +52,11 @@ function About() {
           <FaHandshake /> <p>Drive Social Change </p>
         </li>
       </ul>
+
+      <div className="_Banner">
+        <div className="Shape"></div>
+        <h2>It Is Possible</h2>
+      </div>
       <p>
         Join us on our journey to make art accessible to everyone! Whether
         you're an artist, a supporter, or someone passionate about social
