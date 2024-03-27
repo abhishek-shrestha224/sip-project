@@ -1,0 +1,45 @@
+@use "../../abstracts/" as *;
+
+.AboutPage {
+  margin: 50px 0 80px;
+  padding: 0 7px;
+  ._Banner {
+    margin: 0 0 12px;
+    height: 60px;
+    @include flex(row, flex-start, flex-end);
+    .Shape {
+      height: rem(26);
+      width: 16px;
+      background: $AccentColor;
+    }
+    h2 {
+      color: darken($PrimaryColor, 10%);
+      height: rem(26);
+      font-size: rem(26);
+    }
+  }
+
+  .Vision {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li {
+      color: $AccentColor;
+      font-size: 22px;
+      display: flex;
+      padding-left: 10px;
+      gap: 5px;
+      align-items: center;
+      border: 1px solid $AccentColor;
+      border-radius: 5px;
+      height: 50px;
+
+      p {
+        font-size: 14px;
+        font-family: $HeadingFont;
+        font-weight: bold;
+        color: $TextColor;
+      }
+    }
+  }
+}
